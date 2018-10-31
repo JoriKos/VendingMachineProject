@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int G = 20;
+        int G = 320;
         System.out.println(" __     __  ________  __    __  _______   ______  __    __   ______          \n" +
                 "/  |   /  |/        |/  \\  /  |/       \\ /      |/  \\  /  | /      \\         \n" +
                 "$$ |   $$ |$$$$$$$$/ $$  \\ $$ |$$$$$$$  |$$$$$$/ $$  \\ $$ |/$$$$$$  |        \n" +
