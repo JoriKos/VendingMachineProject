@@ -38,44 +38,17 @@ public class Main {
         Scanner s = new Scanner(System.in);
 
         String a1 = s.nextLine();
-        if (a1.equals("ja")) {
+        String lc = a1.toLowerCase();
+        if (lc.equals("ja")) {
             System.out.println("Vlees of vegetarisch (vlees)?");
         }
-        else if (a1.equals("Ja")) {
-            System.out.println("Vlees of vegetarisch (vlees)?");
-        }
-        else if (a1.equals("JA")) {
-            System.out.println("Vlees of vegetarisch (vlees)?");
-        }
-        else if (a1.equals("ja")) {
-            System.out.println("Vlees of vegetarisch (vlees)?");
-        }
-        else if (a1.equals("nee")){
+        else if (lc.equals("nee")){
             System.out.println("Wil je dan wat drinken?");
         }
-        else if (a1.equals("Nee")) {
-            System.out.println("Wil je dan wat drinken?");
+        else{
+            System.out.println("Vul ''Ja'' of ''Nee'' in");
         }
-        else if (a1.equals("NEe")) {
-            System.out.println("Wil je dan wat drinken?");
-        }
-        else if (a1.equals("NEE")) {
-            System.out.println("Wil je dan wat drinken?");
-        }
-        else if (a1.equals("NeE")) {
-            System.out.println("Wil je dan wat drinken?");
-        }
-        else if (a1.equals("nEE")) {
-            System.out.println("Wil je dan wat drinken?");
-        }
-        else if (a1.equals("neE")) {
-            System.out.println("Wil je dan wat drinken?");
-        }
-        else if (a1.equals("nEe")) {
-            System.out.println("Wil je dan wat drinken?");
-        }
-
-
+        
         String a2 = s.nextLine();
 
 
