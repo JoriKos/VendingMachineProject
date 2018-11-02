@@ -79,12 +79,14 @@ public class Main {
                             "* Water" +
                             "* Koffie" +
                             "* Thee");
+                    b2 = 2;
                 case "nee":
                     System.out.println("Oké, de vending machine sluit nu af");
                     break;
             }
+            }
+            if (b2 == 2) {
 
             }
-
         }
     }
