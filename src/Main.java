@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
@@ -38,19 +39,52 @@ public class Main {
         Scanner s = new Scanner(System.in);
 
         String a1 = s.nextLine();
+        int b1 = 0;
+        int b2 = 0;
         String lc = a1.toLowerCase();
         if (lc.equals("ja")) {
             System.out.println("Vlees of vegetarisch (vlees)?");
+            b1 = 1;
+            b2 = 0;
         }
         else if (lc.equals("nee")){
             System.out.println("Wil je dan wat drinken?");
+            b2 = 1;
+            b1 = 0;
         }
         else{
             System.out.println("Vul ''Ja'' of ''Nee'' in");
         }
-        
+
         String a2 = s.nextLine();
+        lc = a2.toLowerCase();
+        if (b1 == 1){
+        switch (lc) {
+            case "vlees":
+                System.out.println("Warm of koud (opwarmen of gelijk krijgen)");
+            case "vegetarisch":
+                System.out.println("Met of zonder vlees?");
+            case "vegetarisch (vlees)":
+                System.out.println("Met of zonder vlees?");
+        }
+        }
 
+        if (b2 == 1){
+            switch (lc) {
+                case "ja":
+                    System.out.println("Wat wilt u drinken?" +
+                            "* Fanta" +
+                            "* Coca Cola (meerdere varianten)" +
+                            "* Pepsi (meerdere varianten)" +
+                            "* Water" +
+                            "* Koffie" +
+                            "* Thee");
+                case "nee":
+                    System.out.println("Oké, de vending machine sluit nu af");
+                    break;
+            }
 
+            }
+
+        }
     }
-}
